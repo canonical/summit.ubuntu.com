@@ -2,221 +2,141 @@
 layout: default
 ---
 
-<header id="navigation" class="p-navigation">
-  <div class="p-navigation__row">
-    <div class="p-navigation__banner">
-      <div class="p-navigation__logo">
-        <a class="p-navigation__item" href="/">
-          <img src="https://assets.ubuntu.com/v1/15971bf5-cloud-init-primary.svg" alt="cloud-init logo" class="p-navigation__image">
-        </a>
-      </div>
-    </div>
-    <nav class="p-navigation__nav">
-      <span class="u-off-screen">
-        <a href="#main-content">Jump to main content</a>
-      </span>
-    </nav>
-  </div>
-</header>
 
-<section class="p-strip--header">
-  <div class="row u-vertically-center">
-    <div class="col-7">
-      <h1>The standard for customising cloud instances</h1>
-      <div>
-        <a class="github-button" data-size="large" href="https://github.com/canonical/cloud-init" aria-label="Follow @canonical on GitHub"></a>
-        <a class="github-button" data-size="large" href="https://github.com/canonical/cloud-init" data-icon="octicon-star" data-show-count="true" aria-label="Star canonical/cloud-init on GitHub"></a>
-        <a class="github-button" data-size="large" href="https://github.com/canonical/cloud-init/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork canonical/cloud-init on GitHub"></a>
-      </div>
-    </div>
-    <div class="col-5">
-      <div class="u-embedded-media">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/-zL3BdbKyGY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="u-embedded-media__element"></iframe>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="p-strip--light">
-  <div class="row">
-    <div class="col-8">
-      <p>Cloud images are operating system templates and every instance starts out as an identical clone of every other instance. It is the user data that gives every cloud instance its personality and cloud-init is the tool that applies user data to your instances automatically.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-8">
-      <h4>Use cloud-init to configure:</h4>
-      <ul class="p-list is-split">
-        <li class="p-list__item is-ticked">Setting a default locale</li>
-        <li class="p-list__item is-ticked">Setting the hostname</li>
-        <li class="p-list__item is-ticked">Generating and setting up SSH private keys</li>
-        <li class="p-list__item is-ticked">Setting up ephemeral mount points</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="p-strip is-deep">
-  <div class="row">
-    <div class="col-8 u-sv3">
-      <h2>Works with many popular operating systems</h2>
-      <p>While cloud-init started life in Ubuntu, it is now available for most major Linux and FreeBSD operating systems. For cloud image providers, then cloud-init handles many of the differences between cloud vendors automatically &mdash; for example, the official Ubuntu cloud images are identical across all public and private clouds.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="p-card col-3">
-      <header class="p-card__header">
-        <img class="p-card__thumbnail" src="https://assets.ubuntu.com/v1/adac6928-ubuntu.svg" alt="Ubuntu logo">
-      </header>
-      <a href="https://launchpad.net/ubuntu/+source/cloud-init">Get packages</a>
-    </div>
-    <div class="p-card col-3">
-      <header class="p-card__header">
-        <img class="p-card__thumbnail" src="https://assets.ubuntu.com/v1/e0b23092-archlinux.svg" alt="Arch Linux logo">
-      </header>
-      <a href="https://wiki.archlinux.org/index.php/Cloud-init">Get packages</a>
-    </div>
-    <div class="p-card col-3">
-      <header class="p-card__header">
-        <img class="p-card__thumbnail" src="https://assets.ubuntu.com/v1/c69a8b3c-centos-logo.png" alt="CentOS logo">
-      </header>
-      <a href="https://copr.fedorainfracloud.org/coprs/g/cloud-init/el-stable/">Get packages</a>
-    </div>
-    <div class="p-card col-3">
-      <header class="p-card__header">
-        <img class="p-card__thumbnail" src="https://assets.ubuntu.com/v1/5dfb492c-Red_Hat_Logo_2019.svg" alt="Red Hat logo">
-      </header>
-      <a href="https://copr.fedorainfracloud.org/coprs/g/cloud-init/el-stable/">Get packages</a>
-    </div>
-  </div>
-  <div class="row">
-    <div class="p-card col-3">
-      <header class="p-card__header">
-        <img class="p-card__thumbnail" src="https://assets.ubuntu.com/v1/65ab4aca-FREEBSD_Logo_Horiz_Pos_RGB.png" alt="FreeBSD logo">
-      </header>
-      <a href="https://www.freshports.org/net/cloud-init/">Get packages</a>
-    </div>
-    <div class="p-card col-3">
-      <header class="p-card__header">
-        <img class="p-card__thumbnail" src="https://assets.ubuntu.com/v1/893e5c0a-Fedora_logo_%282021%29.svg" alt="Fedora logo">
-      </header>
-      <a href="https://koji.fedoraproject.org/koji/packageinfo?packageID=12620">Get packages</a>
-    </div>
-    <div class="p-card col-3">
-      <header class="p-card__header">
-        <img class="p-card__thumbnail" src="https://assets.ubuntu.com/v1/edc33d73-gentoo-linux-logo.svg" alt="Gentoo Linux logo">
-      </header>
-      <a href="https://packages.gentoo.org/package/app-emulation/cloud-init">Get packages</a>
-    </div>
-    <div class="p-card col-3">
-      <header class="p-card__header">
-        <img class="p-card__thumbnail" src="https://assets.ubuntu.com/v1/2e497b2e-opensuse.svg" alt="OpenSUSE logo">
-      </header>
-      <a href="https://build.opensuse.org/package/show/Cloud:Tools/cloud-init">Get packages</a>
-    </div>
-  </div>
-</section>
-
-<section class="p-strip--light">
-  <div class="row">
-    <div class="col-8">
-      <h2>Source code</h2>
-    </div>
-  </div>
-  <div class="row u-equal-height">
-    <div class="p-card col-6">
-      <h3 class="p-card__title">GitHub</h3>
-      <p class="p-card__content">Browse, branch, fork or clone from GitHub.</p>
-      <a href="https://github.com/canonical/cloud-init">GitHub repository</a>
-    </div>
-    <div class="p-card col-6">
-      <h3 class="p-card__title">Download</h3>
-      <p class="p-card__content">Download the officially released archives.</p>
-      <a href="https://launchpad.net/cloud-init/+download">Download project files</a>
-    </div>
-  </div>
-</section>
-
-<section class="p-strip">
+<section class="p-strip--suru-blog-header is-deep is-dark">
   <div class="u-fixed-width">
-    <div class="p-logo-section">
-      <p class="p-logo-section__title">Used across the public cloud</p>
-      <div class="p-logo-section__items">
-        <div class="p-logo-section__item">
-          <img class="p-inline-section__logo" src="https://assets.ubuntu.com/v1/a1e6f331-2018-logo-rackspace.svg" alt="Rackspace">
-        </div>
-        <div class="p-logo-section__item">
-          <img class="p-inline-section__logo" src="https://assets.ubuntu.com/v1/2274a3e2-2018-logo-OVH.svg" alt="OVH">
-        </div>
-        <div class="p-logo-section__item">
-          <img class="p-inline-section__logo" src="https://assets.ubuntu.com/v1/6aec3a9f-2018-logo-vmware.svg" alt="VMware">
-        </div>
-        <div class="p-logo-section__item">
-          <img class="p-inline-section__logo" src="https://assets.ubuntu.com/v1/d31f722d-Partner-Microsoft-Azure-logo.png" alt="Microsoft Azure">
-        </div>
-        <div class="p-logo-section__item">
-          <img class="p-inline-section__logo" src="https://assets.ubuntu.com/v1/43d45da9-Anbox-logo-aws.png" alt="Amazon Web Services">
-        </div>
-        <div class="p-logo-section__item">
-          <img class="p-inline-section__logo" src="https://assets.ubuntu.com/v1/bebc29f2-2018-logo-Joyent.svg" alt="Joyent">
-        </div>
-        <div class="p-logo-section__item">
-          <img class="p-inline-section__logo" src="https://assets.ubuntu.com/v1/8d9986ed-2018-logo-Fujitsu.svg" alt="Fujitsu">
-        </div>
-        <div class="p-logo-section__item">
-          <img class="p-inline-section__logo" src="https://assets.ubuntu.com/v1/410984a3-Google-cloud-platform-stacked.svg" alt="Google Cloud Platform">
-        </div>
-        <div class="p-logo-section__item">
-          <img class="p-inline-section__logo" src="https://assets.ubuntu.com/v1/debf01e1-Oracle-Cloud-Logo-350.png" alt="Oracle Cloud">
-        </div>
-    </ul>
-    <div class="row u-align--center">
-      <a href="https://canonical.com/partners/find-a-partner?filters=public-cloud">See our other Ubuntu public cloud partners</a>
+    <h1>Welcome to Ubuntu Summit 2022</h1>
+    <p>Join us in Prague, Czech Republic, November 7 to 9 2022, for our first Ubuntu Summit ever. This is the first iteration of our new community focused
+      event, since the last Ubuntu Developer Summit in 2012.</p>
+  </div>
+</section>
+
+<section class="p-strip is-bordered">
+  <div class="u-fixed-width">
+    <h2>About Ubuntu Summit</h2>
+    <p>Ubuntu Summit is an event focused on Ubuntu and its community.</p>
+    <p>It is an opportunity for Ubuntu community contributors to speak about their amazing work and success stories to a wide and diverse audience.</p>
+    <p class="u-sv2">We aim to inspire collaboration by showcasing upcoming and ongoing projects created by the community, Canonical, and partners.</p>
+    <div class="p-notification--information">
+      <div class="p-notification__content">
+        <h5 class="p-notification__title">About Ubuntu</h5>
+        <p class="p-notification__message"><a href="https://ubuntu.com/about">https://ubuntu.com/about</a></p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="p-strip--light">
-  <div class="row">
-    <div class="col-8">
-      <h2>Support</h2>
-    </div>
+<section class="p-strip--light is-bordered">
+  <div class="u-fixed-width u-sv3">
+    <h2>Tracks and Session Ideas</h2>
   </div>
-  <div class="row">
-    <div class="col-3 p-card">
-      <h4>
-        <a href="https://cloudinit.readthedocs.org/">Read the docs</a>
-      </h4>
-      <p>
-        Including datasource and module references, and plenty of examples.
-      </p>
+
+  <div class="row u-equal-height">
+    <div class="col-4 p-card--highlighted">
+      <div class="p-card-content">
+        <h3>Ubuntu Desktop</h3>
+        <hr>
+        <p>Inspiring text to describe this track</p>
+        <p>You will learn about technology such as…</p>
+        <ul class="p-list">
+          <p>This track will hold sessions about topics such as:</p>
+          <li class="p-list__item is-ticked">Ubuntu Desktop</li>
+          <li class="p-list__item is-ticked">Core Desktop</li>
+          <li class="p-list__item is-ticked">IoT</li>
+          <li class="p-list__item is-ticked">WSL</li>
+          <li class="p-list__item is-ticked">Snapcraft</li>
+        </ul>
+      </div>
     </div>
-    <div class="col-3 p-card">
-      <h4>
-        <a href="https://libera.chat/">Chat on Libera Chat</a>
-      </h4>
-      <p>We have an active IRC community on #cloud-init &mdash; get involved!</p>
+
+    <div class="col-4 p-card--highlighted">
+      <div class="p-card-content">
+        <h3>Community</h3>
+        <hr>
+        <ul class="p-list">
+          <li class="p-list__item is-ticked">Community Building & Management</li>
+          <li class="p-list__item is-ticked">Snapcraft</li>
+          <li class="p-list__item is-ticked">Data Science</li>
+          <li class="p-list__item is-ticked">Machine Learning Operations</li>
+          <li class="p-list__item is-ticked">WSL</li>
+          <li class="p-list__item is-ticked">Juju & Charms</li>
+        </ul>
+      </div>
     </div>
-    <div class="col-3 p-card">
-      <h4>
-        <a href="https://ubuntu.com/blog/cloud-instance-initialisation-with-cloud-init">Read the whitepaper</a>
-      </h4>
-      <p>Cloud Instance Initialisation with cloud-init.</p>
+
+    <div class="col-4 p-card--highlighted">
+      <div class="p-card-content">
+        <h3>Data Science</h3>
+        <hr>
+        <ul class="p-list">
+          <li class="p-list__item is-ticked">Data Science</li>
+          <li class="p-list__item is-ticked">Machine Learning Operations</li>
+          <li class="p-list__item is-ticked">WSL</li>
+          <li class="p-list__item is-ticked">Ubuntu Desktop</li>
+        </ul>
+      </div>
     </div>
-    <div class="col-3 p-card">
-      <h4>
-        <a href="https://bugs.launchpad.net/cloud-init/+filebug">Report a bug</a>
-      </h4>
-      <p>Help us improve the software by flagging bugs and issues you find on Launchpad.</p>
+
+    <div class="col-4 p-card--highlighted">
+      <div class="p-card-content">
+        <h3>Application Ecosystem</h3>
+        <hr>
+        <ul class="p-list">
+          <li class="p-list__item is-ticked">Flutter</li>
+          <li class="p-list__item is-ticked">Snapcraft</li>
+          <li class="p-list__item is-ticked">Ubuntu Desktop</li>
+          <li class="p-list__item is-ticked">Juju & Charms</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-4 p-card--highlighted">
+      <div class="p-card-content">
+        <h3>Infrastructure</h3>
+        <hr>
+        <ul class="p-list">
+          <li class="p-list__item is-ticked">IoT</li>
+          <li class="p-list__item is-ticked">Core Desktop</li>
+          <li class="p-list__item is-ticked">Ubuntu Server</li>
+          <li class="p-list__item is-ticked">WSL</li>
+          <li class="p-list__item is-ticked">Foundations</li>
+          <li class="p-list__item is-ticked">Cloud</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-4 p-card--highlighted">
+      <div class="p-card-content">
+        <h3>Content & Design</h3>
+        <hr>
+        <ul class="p-list">
+          <li class="p-list__item is-ticked">Ubuntu Desktop</li>
+          <li class="p-list__item is-ticked">Visual Design</li>
+          <li class="p-list__item is-ticked">Content Creation</li>
+          <li class="p-list__item is-ticked">Photography</li>
+          <li class="p-list__item is-ticked">Audio/Video</li>
+          <li class="p-list__item is-ticked">Music</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="p-strip">
+<section class="p-strip is-bordered">
+  <div class="u-fixed-width">
+    <h2>Registration</h2>
+    <p>Registration will open on <strong>Sep 1, 2022</strong> at this location. Stay tuned for more news.</p>
+    <p><a href="#" class="p-button--positive">Register</a></p>
+  </div>
+</section>
+
+<section class="p-strip--light is-bordered">
   <div class="row">
-    <div class="col-8">
-      <h2>About</h2>
-      <p>cloud-init is developed and released as free software under both the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPLv3 open source license</a> and the <a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License version 2.0</a>. It was originally designed for the <a href="https://www.ubuntu.com/">Ubuntu</a> distribution of Linux in Amazon EC2, but is now supported on many Linux and UNIX distributions in every major cloud.</p>
+    <div class="col-8 u-vertically-center">
+      <p class="p-heading--3">We can either point to our email summit@ubuntu.com, or create a small web form in the site.</p>
+      </div>
+    <div class="col-4">
+      <img src="https://assets.ubuntu.com/v1/c4b290c8-Contact+us.svg" alt="" width="211" height="150">
     </div>
   </div>
 </section>

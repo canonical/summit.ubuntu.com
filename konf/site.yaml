@@ -1,21 +1,18 @@
-domain: cloud-init.io
+domain: summit.ubuntu.com
 
-image: prod-comms.docker-registry.canonical.com/cloud-init.io
+image: prod-comms.docker-registry.canonical.com/summit.ubuntu.com
 
 useProxy: false
 
 readinessPath: "/"
 
-extraHosts:
-  - domain: cloud-init.org
-    useParentTLS: True
 
 # Overrides for production
 production:
   replicas: 5
   nginxConfigurationSnippet: |
-    if ($host != 'cloud-init.io' ) {
-      rewrite ^ https://cloud-init.io$request_uri? permanent;
+    if ($host != 'summit.ubuntu.com' ) {
+      rewrite ^ https://summit.ubuntu.com$request_uri? permanent;
     }
     more_set_headers "Link: <https://assets.ubuntu.com>; rel=preconnect; crossorigin, <https://assets.ubuntu.com>; rel=preconnect";
 

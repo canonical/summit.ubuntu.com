@@ -1,9 +1,9 @@
-# Cloud Init
+# Ubuntu Summit
 
-[![CircleCI build status](https://circleci.com/gh/canonical-web-and-design/cloud-init.io.svg?style=shield)](https://circleci.com/gh/canonical-web-and-design/cloud-init.io)
-[![Code coverage](https://codecov.io/gh/canonical-web-and-design/cloud-init.io/branch/main/graph/badge.svg)](https://codecov.io/gh/canonical-web-and-design/cloud-init.io)
+[![CircleCI build status](https://circleci.com/gh/canonical-web-and-design/summit.ubuntu.com.svg?style=shield)](https://circleci.com/gh/canonical-web-and-design/summit.ubuntu.com)
+[![Code coverage](https://codecov.io/gh/canonical-web-and-design/summit.ubuntu.com/branch/main/graph/badge.svg)](https://codecov.io/gh/canonical-web-and-design/summit.ubuntu.com)
 
-Codebase for http://cloud-init.io - the marketing website
+Codebase for http://summit.ubuntu.com - the events website
 
 ## Local development
 
