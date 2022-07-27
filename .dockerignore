@@ -1,0 +1,26 @@
+# Don't include caches, logs and documentation
+*.log
+.circleci
+.codecov
+.git
+.github
+.gitignore
+.vscode
+.editorconfig
+cache.sqlite
+README.md
+HACKING.md
+renovate.json
+LICENCE
+.sass-lint.yml
+
+# The run script isn't needed
+run
+.docker-project
+
+# Environemnt
+.env
+.env.local
+
+# Node is only needed for building, not running
+node_modules

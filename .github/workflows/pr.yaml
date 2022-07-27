@@ -1,0 +1,64 @@
+name: PR checks
+on: pull_request
+
+jobs:
+  run-image:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build image
+        run: DOCKER_BUILDKIT=1 docker build --tag cloud-init-io .
+
+      - name: Run image
+        run: |
+          docker run --detach --publish 80:80 cloud-init-io
+          sleep 1
+          curl --head --fail --retry-delay 1 --retry 30 --retry-connrefused http://localhost
+
+  run-dotrun:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dotrun
+        uses: canonical/install-dotrun@main
+
+      - name: Install dependencies
+        run: /snap/bin/dotrun install
+
+      - name: Build assets
+        run: /snap/bin/dotrun build
+
+      - name: Run dotrun
+        run: |
+          /snap/bin/dotrun &
+          curl --head --fail --retry-delay 1 --retry 30 --retry-connrefused http://localhost:8009
+
+  lint-scss:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: yarn install --immutable
+
+      - name: Lint scss
+        run: yarn lint-scss
+        
+  check-inclusive-naming:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Check inclusive naming
+        uses: canonical-web-and-design/inclusive-naming@main
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          reporter: github-pr-review
+          fail-on-error: true
