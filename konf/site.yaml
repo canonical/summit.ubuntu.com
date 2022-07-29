@@ -2,7 +2,6 @@ domain: summit.ubuntu.com
 
 image: prod-comms.docker-registry.canonical.com/summit.ubuntu.com
 
-useProxy: false
 
 readinessPath: "/"
 
