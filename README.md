@@ -5,6 +5,7 @@
 
 Codebase for http://summit.ubuntu.com - the events website
 
+
 ## Local development
 
 The simplest way to run the site locally is with the [dotrun snap](https://snapcraft.io/dotrun):
