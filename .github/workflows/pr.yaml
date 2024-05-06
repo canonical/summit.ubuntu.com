@@ -21,21 +21,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Install dotrun
         uses: canonical/install-dotrun@main
 
       - name: Install dependencies
-        run: /snap/bin/dotrun install
-
-      - name: Build assets
-        run: /snap/bin/dotrun build
+        run: |
+          sudo chmod -R 777 .
+          dotrun install
 
       - name: Run dotrun
         run: |
-          /snap/bin/dotrun &
-          curl --head --fail --retry-delay 1 --retry 30 --retry-connrefused http://localhost:8048
+          dotrun & curl --head --fail --retry-delay 3 --retry 30 --retry-connrefused http://localhost:8048
 
   lint-scss:
     runs-on: ubuntu-latest
@@ -48,7 +46,7 @@ jobs:
 
       - name: Lint scss
         run: yarn lint-scss
-        
+
   check-inclusive-naming:
     runs-on: ubuntu-latest
 
